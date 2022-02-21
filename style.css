@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.ikona{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    position: fixed;
+    cursor: pointer;
+    z-index:2;
+}
+.ikona i{
+    font-size: 40px;
+    color: white;
+}
+.ikona i:hover{
+    color: rgb(126, 4, 4);
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(94, 93, 93);
+}
+
+
+.nav-link{
+    border-bottom:white solid 2px;
+}
+.nav-link:hover{
+    border-bottom: none;
+}
+
+.landing-page{
+    background-image: url('Foto/sc3.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pop-up{
+    position: relative;
+    width: 200px;
+    top:0px;
+    text-align: center;
+}
+.pop-up .cont{
+    position: absolute;
+    width: 100%;
+    transition: 1s;
+}
+.pop-up .cont:hover{
+    transform: translateY(-40px);
+    transition: 1s;
+}
+.cont img{
+    height: 40vh;
+}
+
+.pop-up1{
+    position: relative;
+    width: 300px;
+    top: 200px;
+    text-align: center;
+    margin: auto;
+
+}
+.pop-up1 .cont1{
+    position: absolute;
+    width: 100%;
+    left: 150px;
+}
+
+.cont1 img{
+    height: 40vh;
+    width: 40vh;
+    transition: 1s;
+}
+.pop-up1{
+    top:-500px;
+    animation: dropp 3s ease forwards;
+}
+@keyframes dropp{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        transform: translateY(800px);
+    }
+    100%{
+        transition:1s;
+        transform: translateY(730px);
+        
+        
+    }
+}
+
+.cont1 img:hover{
+    transition: 1s;
+    transform:rotate(-45deg);
+    
+
+}
+
+.pop-up3{
+    position: relative;
+    width: 200px;
+    top: 0px;
+    margin: auto;
+    text-align: center;
+}
+.pop-up3 .cont3{
+    position: absolute;
+    width: 100%;
+    left: 320px;
+    transition: 1s;
+}
+.pop-up3 .cont3:hover{
+    transform: translateY(-40px);
+    transition: 1s;
+}
+.cont3 img{
+    height: 30vh;
+}
+
+
+
+.festa img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.festa img:hover{
+    border: rgb(94, 93, 93) solid 4px;
+    
+}
+.carousel-item{
+    height: 75vh;
+}
+.carousel-item img{
+    height:100%;
+    object-fit: cover;
+}
+.hyrje i{
+    font-size: 40px;
+    text-align: center;
+    transition: 1s;
+}
+.hyrje i:hover{
+    font-size: 70px;
+    transition: 1s;
+}
+.hyrje h1{
+    font-size: 20px;
+}
+.hyrje img{
+    width: 40px;
+    height: 40px;
+    transition: 1s;
+}
+.hyrje img:hover{
+width: 70px;
+height: 70px;
+transition: 1s;
+}
+del{
+    color: red;
+}
+.card img{
+    height: 30vh;
+    object-fit: cover;
+    background-position:center;
+}
+.black{
+    background-color:rgb(126, 4, 4);
+}
+.card{
+    box-shadow: 7px 7px 5px rgb(126, 4, 4);
+}
+.rreth{
+    border-radius: 0px 90px 0px 0px;
+}
+
+.offcanvas-body img{
+    width: 40px;
+    height: 40px;
+}
+.offcanvas-body i{
+    font-size: 40px;
+    color: rgb(126, 4, 4);
+}
+.ofertat{
+    background-image: url('foto/back1.webp');
+   background-size: cover;
+}
+.ofertat .card{
+    box-shadow: none;
+}
+.ofertat img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.gallery img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+.list-unstyled a{
+    text-decoration: none;
+    color: white;
+}
+
+form input{
+    margin-top: 10px;
+}
+.page-footer i{
+    font-size: 20px;
+}
+
+.page-footer i:hover{
+    color: rgb(126, 4, 4);
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1100px){
+    .pop-up1 .cont1{
+        position: absolute;
+        width: 100%;
+        left: 70px;
+    }
+    .pop-up{
+        display: none;
+    }
+    
+    .pop-up3{
+        display: none;
+    }
+    .pop-up1{
+        width: 250px;
+        top: 200px;
+    }
+    @keyframes dropp{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        75%{
+            transform: translateY(300px);
+        }
+        100%{
+            transition:1s;
+            transform: translateY(230px);
+            
+            
+        }
+    }
+}
+
+@media (max-width:600px) {
+.landing-page{
+    height: 100vh;
+    width: 100%;
+}
+
+.pop-up{
+    display: none;
+}
+
+.pop-up3{
+    display: none;
+}
+
+.pop-up1{
+    position: relative;
+    width: 230px;
+    top: 200px;
+
+}
+.pop-up1 .cont1{
+    position: absolute;
+    width: 100%;
+    left: -60px;
+}
+
+.cont1 img{
+    height: 30vh;
+    width: 30vh;
+    transition: 1s;
+    text-align: center;
+}
+
+@keyframes dropp{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        transform: translateY(300px);
+    }
+    100%{
+        transition:1s;
+        transform: translateY(230px);
+        
+        
+    }
+}
+.card{
+    margin-bottom: 15px;
+}
+nav input{
+    margin-top: 7px;
+    position: absolute;
+    left: 85px;
+}
+.butonii{
+    margin-top: 7px;
+    float: right;
+}
+.rreth{
+    border-radius: 0px 0px 40px 40px;
+}
+.container-fluid img{
+   padding-bottom: 30px;
+}
+
+
+.shiko{
+    width: 100%;
+}
+
+
+.gal1{
+    display: none;
+}
+
+
+}
